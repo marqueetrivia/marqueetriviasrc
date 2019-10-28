@@ -1,0 +1,13 @@
+*.sql
+*.log
+.cache
+.DS_Store
+.temp
+node_modules
+wp-images
+.env
+.env.*
+server/
+vendor/
+.data/
+keys.php
