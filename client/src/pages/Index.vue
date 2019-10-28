@@ -10,7 +10,7 @@
             </div>
           </div>
         </div>
-        <g-image src="~/assets/home/PlaceholderHero.jpg"
+        <g-image src="~/assets/home/homeHero.jpeg"
         class="hero__img"/>
       </header>
     </main>

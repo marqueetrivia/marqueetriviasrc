@@ -11,5 +11,5 @@ server/
 vendor/
 .data/
 keys.php
-dist
+dist/
 deploy.sh
