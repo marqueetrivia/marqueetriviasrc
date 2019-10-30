@@ -13,6 +13,27 @@
         <g-image src="~/assets/home/homeHero.jpeg"
         class="hero__img"/>
       </header>
+      <section class="section">
+        <div class="container grid">
+          <div class="grid-1of2">
+            <h2>Coming Soon</h2>
+          </div>
+          <div class="grid-1of2">
+            <g-link class="next-event-container">
+              <div class="next-event card">
+                <header class="next-event__header">
+                  <g-image></g-image>
+                </header>
+                <div class="next-event__content">
+                  <span class="next-event__title">Preview Night</span>
+                  <span class="next-event__date">11/9 @ 5pm</span>
+                </div>
+              </div>
+            </g-link>
+
+          </div>
+        </div>
+      </section>
     </main>
   </Layout>
 </template>

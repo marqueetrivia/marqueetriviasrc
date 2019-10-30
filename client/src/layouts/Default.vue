@@ -2,29 +2,22 @@
   <div class="layout">
     <header class="header" id="site-header">
       <div class="container grid">
-        <div class="logo-container grid-1of1">
+        <div class="logo-container grid-2of3">
           <g-link to="/" class="logo">{{ $static.metadata.siteName }}</g-link>
         </div>
-        <nav class="nav grid-2of3">
+        <nav class="nav grid-1of3">
           <ul class="menu">
             <li class="menu__item">
               <g-link to="/about" class="menu__link">About</g-link>
             </li>
             <li class="menu__item">
-              <g-link to="/events" class="menu__link">Events</g-link>
+              <g-link to="/events" class="menu__link">Coming Soon</g-link>
             </li>
             <li class="menu__item">
               <g-link to="/contact" class="menu__link">Contact</g-link>
             </li>
           </ul>
         </nav>
-        <div class="next-event grid-1of3">
-          <g-link class="next-event__link">
-            Coming Soon:
-            <span class="next-event__title">Preview Night</span>
-            <span class="next-event__date">11/9 @ 5pm</span>
-          </g-link>
-        </div>
       </div>
     </header>
     <article class="content">

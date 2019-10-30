@@ -13,3 +13,4 @@ vendor/
 keys.php
 dist/
 deploy.sh
+wp-images

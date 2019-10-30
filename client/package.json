@@ -9,7 +9,8 @@
     "deploy": "../deploy.sh"
   },
   "dependencies": {
-    "gridsome": "^0.7.9"
+    "gridsome": "^0.7.9",
+    "gridsome-source-wordpress": "^0.4.13"
   },
   "devDependencies": {
     "@gridsome/source-wordpress": "^0.4.3",
