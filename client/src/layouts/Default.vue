@@ -8,13 +8,13 @@
         <nav class="nav grid-1of3 grid-1of1--tablet-large">
           <ul class="menu">
             <li class="menu__item">
-              <g-link to="/about" class="menu__link">About</g-link>
+              <a href="#coming-soon" class="menu__link">Coming Soon</a>
             </li>
             <li class="menu__item">
-              <g-link to="/events" class="menu__link">Coming Soon</g-link>
+              <a href="#about" class="menu__link">About</a>
             </li>
             <li class="menu__item">
-              <g-link to="/contact" class="menu__link">Contact</g-link>
+              <a href="#sign-up" class="menu__link">Sign Up</a>
             </li>
           </ul>
         </nav>

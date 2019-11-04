@@ -13,13 +13,13 @@
         <g-image src="~/assets/home/homeHero.jpeg"
         class="hero__img"/>
       </header>
-      <section class="section section--red next-event">
+      <section class="section section--red next-event" id="coming-soon">
         <div class="container grid">
           <div class="grid-1of2 grid-1of1--tablet-large">
             <h2>Coming Soon</h2>
           </div>
           <div class="grid-1of2 grid-1of1--tablet-large">
-            <g-link class="next-event__container">
+            <div class="next-event__container">
               <div class="next-event__card card">
                 <header class="next-event__header">
                   <!-- <g-image></g-image> -->
@@ -29,11 +29,11 @@
                   <span class="next-event__date">11/9 @ 5pm</span>
                 </div>
               </div>
-            </g-link>
+            </div>
           </div>
         </div>
       </section>
-      <section class="section section--yellow about">
+      <section class="section section--yellow about" id="about">
         <div class="grid">
           <div class="grid-1of3 grid-1of1--tablet-large">
             <g-image src="~/assets/home/about.jpg"/>
@@ -56,7 +56,7 @@
           </div>
         </div>
       </section>
-      <section class="section signup">
+      <section class="section signup" id="sign-up">
         <div class="container grid">
           <div class="grid-1of1">
             <h2>Keep Up To Date</h2>
