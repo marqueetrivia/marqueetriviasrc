@@ -1,6 +1,7 @@
 button,
 .button,
-.btn {
+.btn,
+input[type="submit"] {
 	border: $button-border;
 	border-radius: $button-radius;
 	display: inline-block;

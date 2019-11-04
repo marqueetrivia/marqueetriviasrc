@@ -17,6 +17,9 @@
 
 .content {
   padding: 77px 0px 88px;
+  @include media('tablet-small') {
+    padding-bottom: 100px;
+  }
 }
 
 .hero {
@@ -37,6 +40,8 @@
   }
   .menu {
     margin: 10px 0px;
+    position: relative;
+    top: 11px;
     &__item {
       display: inline-block;
       margin: 0px 5px;
@@ -62,6 +67,9 @@
       &:hover {
         color: $cta-purple;
       }
+    }
+    @include media('tablet-large') {
+      top: 0px;
     }
   }
   .next-event {
@@ -102,18 +110,23 @@
   width: 100%;
   @include elevate(3);
   .social-links {
-    &__menu {
-      li {
-        display: inline-block;
-        padding: 10px;
+    li {
+      display: inline-block;
+      padding: 10px;
+      &.social-links__cta {
+        font-weight: 700;
+        color: $cta-purple;
+        @include media('tablet-small') {
+          display: block;
+          padding: 5px;
+        }
       }
-    }
-    &__cta {
-      font-weight: 700;
-      color: $cta-purple;
     }
   }
   .copyright {
     color: $white;
+    @include media('tablet-small') {
+      margin-top: 5px;
+    }
   }
 }

@@ -5,13 +5,23 @@
       background-color: rgba($black, .33);
       .container {
         position: relative;
-        top: 33.333%;
+        top: 115px;
+        @include media('tablet-large') {
+          top: 105px;
+        }
+        @include media('tablet-small') {
+          top: 55px;
+        }
       }
       &__content {
         position: relative;
         top: 33.333%;
         width: 33.333%;
         left: 66.666%;
+        @include media('tablet-large') {
+          width: 100%;
+          left: 0;
+        }
       }
     }
     h1 {
@@ -22,6 +32,9 @@
       color: $white;
       font-style: italic;
     }
+  }
+  h2, p {
+    color: $text-black;
   }
   .overlay {
     position: absolute;
@@ -39,21 +52,75 @@
       background-color: $marquee-red;
     }
   }
+  .next-event {
+    padding: 20px 0px;
+    h2 {
+      @include media('tablet-large') {
+        text-align: center;
+      }
+    }
+    &__title {
+      font-weight: 700;
+      display: block;
+    }
+    &__container {
+      padding-left: 50px;
+      display: block;
+      @include media('tablet-large') {
+        padding-left: 0px;
+        margin-top: 20px;
+      }
+    }
+  }
   .about {
+    h2 {
+      margin-bottom: 10px;
+    }
     img {
       max-width: 100%;
+      @include media('tablet-large') {
+        display: none;
+      }
     }
     .overlay {
       background: linear-gradient(90deg, rgba($gilding, 0) 0%, rgba($gilding, 0) 66.666%, rgba($gilding, 1) 100%);
     }
     &__content {
-      position: relative;
-      top: 90px;
-      padding: 0px 12%;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      padding: 30px 12%;
+      @include media('tablet-large') {
+        top: 0px;
+        position: relative;
+        transform: translateY(0);
+        max-width: 1280px;
+        width: 85%;
+        margin: 0px auto;
+        padding: 30px 0px;
+      }
     }
     p {
       line-height: 1.2;
       margin-bottom: 10px;
+    }
+  }
+  .signup {
+    padding: 20px 0px;
+    h2 {
+      text-align: center;
+    }
+  }
+  .mailchimp-signup {
+    max-width: 500px;
+    margin: 0px auto;
+    #mc_embed_signup {
+      form {
+        h2 {
+          display: none;
+        }
+        padding: 0px;
+      }
     }
   }
 }

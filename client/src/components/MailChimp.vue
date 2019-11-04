@@ -1,5 +1,5 @@
 <template>
-  <div class="mail-chimp-signup">
+  <div class="mailchimp-signup">
     <!-- Begin Mailchimp Signup Form -->
     <div id="mc_embed_signup">
       <form action="https://gmail.us5.list-manage.com/subscribe/post?u=7337420e6783810a874d22fe4&amp;id=7565936ba5" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>

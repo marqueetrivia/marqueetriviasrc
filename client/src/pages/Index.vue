@@ -13,14 +13,14 @@
         <g-image src="~/assets/home/homeHero.jpeg"
         class="hero__img"/>
       </header>
-      <section class="section section--red">
+      <section class="section section--red next-event">
         <div class="container grid">
-          <div class="grid-1of2">
+          <div class="grid-1of2 grid-1of1--tablet-large">
             <h2>Coming Soon</h2>
           </div>
-          <div class="grid-1of2">
-            <g-link class="next-event-container">
-              <div class="next-event card">
+          <div class="grid-1of2 grid-1of1--tablet-large">
+            <g-link class="next-event__container">
+              <div class="next-event__card card">
                 <header class="next-event__header">
                   <!-- <g-image></g-image> -->
                 </header>
@@ -35,11 +35,11 @@
       </section>
       <section class="section section--yellow about">
         <div class="grid">
-          <div class="grid-1of3">
+          <div class="grid-1of3 grid-1of1--tablet-large">
             <g-image src="~/assets/home/about.jpg"/>
             <div class="overlay overlay--gradient overlay--gradient--right"/>
           </div>
-          <div class="grid-2of3">
+          <div class="grid-2of3 grid-1of1--tablet-large">
             <div class="about__content content--right">
               <h2>About Us</h2>
               <p>Marquee Trivia was started by Wesley Emblidge and James Macon
@@ -56,12 +56,10 @@
           </div>
         </div>
       </section>
-      <section class="section">
+      <section class="section signup">
         <div class="container grid">
-          <div class="grid-1of2">
+          <div class="grid-1of1">
             <h2>Keep Up To Date</h2>
-          </div>
-          <div class="grid-1of2">
             <MailchimpSignUp/>
           </div>
         </div>
