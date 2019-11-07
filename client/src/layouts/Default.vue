@@ -5,7 +5,7 @@
         <div class="logo-container grid-2of3 grid-1of1--tablet-large">
           <g-link to="/" class="logo">{{ $static.metadata.siteName }}</g-link>
         </div>
-        <nav class="nav grid-1of3 grid-1of1--tablet-large">
+        <!-- <nav class="nav grid-1of3 grid-1of1--tablet-large">
           <ul class="menu">
             <li class="menu__item">
               <a href="#coming-soon" class="menu__link">Coming Soon</a>
@@ -18,7 +18,7 @@
             </li>
           </ul>
         </nav>
-      </div>
+      </div> -->
     </header>
     <article class="content">
       <slot/>

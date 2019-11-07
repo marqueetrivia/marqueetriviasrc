@@ -13,7 +13,7 @@
         <g-image src="~/assets/home/homeHero.jpeg"
         class="hero__img"/>
       </header>
-      <section class="section section--red next-event" id="coming-soon">
+      <!-- <section class="section section--red next-event" id="coming-soon">
         <div class="container grid">
           <div class="grid-1of2 grid-1of1--tablet-large">
             <h2>Coming Soon</h2>
@@ -22,7 +22,7 @@
             <div class="next-event__container">
               <div class="next-event__card card">
                 <header class="next-event__header">
-                  <!-- <g-image></g-image> -->
+                  <g-image></g-image>
                 </header>
                 <div class="next-event__content">
                   <span class="next-event__title">Preview Night</span>
@@ -32,7 +32,7 @@
             </div>
           </div>
         </div>
-      </section>
+      </section> -->
       <section class="section section--yellow about" id="about">
         <div class="grid">
           <div class="grid-1of3 grid-1of1--tablet-large">
