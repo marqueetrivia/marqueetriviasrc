@@ -5,12 +5,12 @@
       background-color: rgba($black, .5);
       .container {
         position: relative;
-        top: 115px;
+        top: 225px;
         @include media('tablet-large') {
           top: 105px;
         }
         @include media('tablet-small') {
-          top: 55px;
+          top: 35px;
         }
       }
       &__content {
