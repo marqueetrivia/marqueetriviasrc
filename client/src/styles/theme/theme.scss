@@ -16,7 +16,7 @@
 }
 
 .content {
-  padding: 77px 0px 88px;
+  padding: 57px 0px 88px;
   @include media('tablet-small') {
     padding-bottom: 100px;
   }
@@ -37,6 +37,9 @@
   top: 0px;
   .container {
     position: relative;
+  }
+  .logo-container {
+    text-align: center;
   }
   nav {
     text-align: right;

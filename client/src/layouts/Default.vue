@@ -2,7 +2,7 @@
   <div class="layout">
     <header class="header" id="site-header">
       <div class="container grid">
-        <div class="logo-container grid-2of3 grid-1of1--tablet-large">
+        <div class="logo-container grid-1of1">
           <g-link to="/" class="logo">{{ $static.metadata.siteName }}</g-link>
         </div>
         <!-- <nav class="nav grid-1of3 grid-1of1--tablet-large">
@@ -17,8 +17,8 @@
               <a href="#sign-up" class="menu__link">Sign Up</a>
             </li>
           </ul>
-        </nav>
-      </div> -->
+        </nav> -->
+      </div>
     </header>
     <article class="content">
       <slot/>
