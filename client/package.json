@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "gridsome": "^0.7.9",
+    "gridsome-plugin-gtm": "^0.1.1",
     "gridsome-source-wordpress": "^0.4.13"
   },
   "devDependencies": {

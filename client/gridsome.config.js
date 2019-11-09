@@ -36,6 +36,14 @@ module.exports = {
         },
       },
     },
+    {
+      use: 'gridsome-plugin-gtm',
+      options: {
+        id: 'GTM-NQCF3XR',
+        enabled: true,
+        debug: false
+      }
+    },
   ],
   chainWebpack(config) {
     const types = ['vue-modules', 'vue', 'normal-modules', 'normal']
