@@ -38,10 +38,8 @@
           <div class="grid-1of1">
             <div class="about__content">
               <h2>About Us</h2>
-              <p>Marquee Trivia is held once a month in the greater Boston area. Each month brings a different theme for the night
-                with questions that orbit around that theme and prizes that are for sure definitely 100% totally at best tangentially
-                related to the theme for the night.
-                For more information and to stay up-to-date with each month's event sign up for our newsletter.</p>
+              <p>Marquee Trivia is Boston's first film trivia night. Coming soon to an area bar.
+                For more information and to stay up-to-date sign up for our newsletter.</p>
               <p class="about__signoff">See you at trivia!</p>
             </div>
           </div>
