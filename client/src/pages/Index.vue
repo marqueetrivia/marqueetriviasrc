@@ -38,8 +38,16 @@
           <div class="grid-1of1">
             <div class="about__content">
               <h2>About Us</h2>
-              <p>Marquee Trivia is Boston's first film trivia night. Coming soon to an area bar.
-                For more information and to stay up-to-date sign up for our newsletter.</p>
+              <p>Marquee Trivia was started in 2019 by Wesley Emblidge and James Macon,
+                two staff members from Independent Film Festival Boston.</p>
+              <p>Feeling a severe lack of challenging film trivia in the Boston area,
+                we created this monthly trivia night to help bring the city’s film community closer together.
+                Every month we dive into movie marginalia, Oscars history, box office stats,
+                [insert uproariously funny, critically acclaimed, extremely relatable,
+                and slightly spicy movie joke here], and more, with film-related prizes
+                for the winning team.</p>
+              <p>For more information and to stay up-to-date with all our events,
+                sign up for the newsletter and follow us on social media below!</p>
               <p class="about__signoff">See you at trivia!</p>
             </div>
           </div>
