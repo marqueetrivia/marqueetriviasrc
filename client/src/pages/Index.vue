@@ -129,7 +129,7 @@ export default {
         content: "Marquee Trivia",
       },
       {
-        property: "og:descriptions",
+        property: "og:description",
         content: "Boston's first film focused trivia night. Every month we dive into movie marginalia, Oscars history, box office stats, and more!",
       },
       {
@@ -145,7 +145,7 @@ export default {
         content: "Marquee Trivia",
       },
       {
-        property: "twitter:descriptions",
+        property: "twitter:description",
         content: "Boston's first film focused trivia night. Every month we dive into movie marginalia, Oscars history, box office stats, and more!",
       },
       {
