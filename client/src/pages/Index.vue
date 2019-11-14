@@ -44,8 +44,8 @@
                 we created this monthly trivia night to help bring the city’s film community closer together.
                 Every month we dive into movie marginalia, Oscars history, box office stats,
                 [insert uproariously funny, critically acclaimed, extremely relatable,
-                and slightly spicy movie joke here], and more, with film-related prizes
-                for the winning team.</p>
+                and slightly spicy movie joke here], and more! Not to mention: fabulous film-related prizes for
+                to the winning team.</p>
               <p>For more information and to stay up-to-date with all our events,
                 sign up for the newsletter and follow us on social media below!</p>
               <p class="about__signoff">See you at trivia!</p>
@@ -122,7 +122,41 @@
 import MailchimpSignUp from "../components/MailChimp.vue";
 export default {
   metaInfo: {
-    title: 'Home'
+    title: 'Home',
+    meta: [
+      {
+        property: "og:title",
+        content: "Marquee Trivia",
+      },
+      {
+        property: "og:descriptions",
+        content: "Boston's first film focused trivia night. Every month we dive into movie marginalia, Oscars history, box office stats, and more!",
+      },
+      {
+        property: "og:url",
+        content: "https://wwww.marqueetrivia.com",
+      },
+      {
+        property: "og:image",
+        content: "~/assets/home/homeHero.jpeg",
+      },
+      {
+        property: "twitter:title",
+        content: "Marquee Trivia",
+      },
+      {
+        property: "twitter:descriptions",
+        content: "Boston's first film focused trivia night. Every month we dive into movie marginalia, Oscars history, box office stats, and more!",
+      },
+      {
+        property: "twitter:card",
+        content: "summary_large_image",
+      },
+      {
+        property: "twitter:image",
+        content: "~/assets/home/homeHero.jpeg",
+      }
+    ],
   },
   components: {
     MailchimpSignUp

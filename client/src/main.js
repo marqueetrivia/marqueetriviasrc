@@ -6,8 +6,10 @@ import './styles/theme/theme.scss'
 export default function (Vue, { router, head, isClient }) {
   // Set default layout as a global component
   Vue.component('Layout', DefaultLayout)
-  head.meta.push({
-    name:"google-site-verification",
-    content:"-DHI0MeNsBW2unPUGPs6_DCB72kCd-VryHE2JQ1sijM",
-  });
+  head.meta.push(
+    {
+      name: "google-site-verification",
+      content: "-DHI0MeNsBW2unPUGPs6_DCB72kCd-VryHE2JQ1sijM",
+    },
+  );
 }
