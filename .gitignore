@@ -11,7 +11,7 @@ server/
 vendor/
 .data/
 keys.php
-dist/
+client/dist/
 deploy.sh
 wp-images
 keys
