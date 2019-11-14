@@ -57,8 +57,9 @@
         <div class="container grid">
           <div class="grid-1of1">
             <h2>Community Partners</h2>
+            <p>With support from local film institutions</p>
           </div>
-          <div class="grid-1of3">
+          <div class="grid-1of4 grid-1of2--tablet-large">
             <div class="sponsors__sponsor">
               <a
               href="https://iffboston.org"
@@ -68,7 +69,7 @@
               </a>
             </div>
           </div>
-          <div class="grid-1of3">
+          <div class="grid-1of4 grid-1of2--tablet-large">
             <div class="sponsors__sponsor">
               <a
               href="https://coolidge.org"
@@ -78,13 +79,23 @@
               </a>
             </div>
           </div>
-          <div class="grid-1of3">
+          <div class="grid-1of4 grid-1of2--tablet-large">
             <div class="sponsors__sponsor">
               <a
               href="http://web.emerson.edu/brightlights/"
               rel="noopenner"
               target="_blank">
                 <g-image src="~/assets/sponsors/BrightLightsWhite.png"/>
+              </a>
+            </div>
+          </div>
+          <div class="grid-1of4 grid-1of2--tablet-large">
+            <div class="sponsors__sponsor">
+              <a
+              href="https://www.brattlefilm.org/"
+              rel="noopenner"
+              target="_blank">
+                <g-image src="~/assets/sponsors/BrattleLogo.png"/>
               </a>
             </div>
           </div>
