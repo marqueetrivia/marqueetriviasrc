@@ -130,7 +130,7 @@ export default {
       },
       {
         property: "og:description",
-        content: "Boston's first film focused trivia night. Every month we dive into movie marginalia, Oscars history, box office stats, and more!",
+        content: "Boston’s first trivia night for film lovers. Every month we dive into movie marginalia, Oscars history, box office stats, and more!",
       },
       {
         property: "og:url",
@@ -146,7 +146,7 @@ export default {
       },
       {
         property: "twitter:description",
-        content: "Boston's first film focused trivia night. Every month we dive into movie marginalia, Oscars history, box office stats, and more!",
+        content: "Boston’s first trivia night for film lovers. Every month we dive into movie marginalia, Oscars history, box office stats, and more!",
       },
       {
         property: "twitter:card",
