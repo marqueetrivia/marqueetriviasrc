@@ -134,7 +134,7 @@ export default {
       },
       {
         property: "og:url",
-        content: "https://wwww.marqueetrivia.com",
+        content: "https://www.marqueetrivia.com",
       },
       {
         property: "og:image",
