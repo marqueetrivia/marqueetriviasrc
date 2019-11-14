@@ -138,7 +138,7 @@ export default {
       },
       {
         property: "og:image",
-        content: "~/assets/home/homeHero.jpeg",
+        content: "/assets/static/src/assets/home/homeHero.jpeg",
       },
       {
         property: "twitter:title",
@@ -154,7 +154,7 @@ export default {
       },
       {
         property: "twitter:image",
-        content: "~/assets/home/homeHero.jpeg",
+        content: "/assets/static/src/assets/home/homeHero.jpeg",
       }
     ],
   },
