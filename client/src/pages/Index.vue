@@ -56,8 +56,8 @@
       <section class="section section--red sponsors" id="sponsors">
         <div class="container grid">
           <div class="grid-1of1">
-            <h2>Community Partners</h2>
-            <p>With support from local film institutions</p>
+            <h2>Our Community Partners</h2>
+            <p>We’re grateful to have support from these local film institutions:</p>
           </div>
           <div class="grid-1of4 grid-1of2--tablet-large">
             <div class="sponsors__sponsor">
