@@ -44,7 +44,7 @@
                 we created this monthly trivia night to help bring the city’s film community closer together.
                 Every month we dive into movie marginalia, Oscars history, box office stats,
                 [insert uproariously funny, critically acclaimed, extremely relatable,
-                and slightly spicy movie joke here], and more! Not to mention: fabulous film-related prizes for
+                and slightly spicy movie joke here], and more! Not to mention: we have fabulous film-related prizes for
                 the winning team.</p>
               <p>For more information and to stay up-to-date with all our events,
                 sign up for the newsletter and follow us on social media below!</p>
