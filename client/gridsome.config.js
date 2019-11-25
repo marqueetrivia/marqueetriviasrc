@@ -30,10 +30,13 @@ module.exports = {
         typeName: 'WordPress',
         perPage: 100,
         concurrent: 10,
-        routes: {
-          post: '/:slug/',
-          triviaEvent: '/event/:slug/'
-        },
+        customEndpoints: [
+          {
+            typeName: "NextTriviaEvent",
+            route: "/trivia/v1/next_event",
+            normalize: true,
+          },
+        ],
       },
     },
     {
@@ -45,6 +48,9 @@ module.exports = {
       }
     },
   ],
+  templates: {
+    WordPressTriviaevent: '/triviaevent/:slug'
+  },
   chainWebpack(config) {
     const types = ['vue-modules', 'vue', 'normal-modules', 'normal']
 

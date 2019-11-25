@@ -1,0 +1,53 @@
+.events {
+  header {
+    padding-bottom: 0px;
+    h1 {
+      font-size: 4rem;
+      margin-top: 20px;
+    }
+  }
+  &__list {
+    .event {
+      h3 {
+        font-weight: 700;
+        font-size: 2.5rem;
+      }
+      p {
+        line-height: 1.4;
+      }
+      .card {
+        padding: 0;
+        &:hover {
+          background-color: $light-board-off-white;
+        }
+      }
+      &__image {
+        @include media('tablet-large') {
+          height: 300px;
+        }
+      }
+      &__title {
+        margin-bottom: 20px;
+      }
+      &__details {
+        padding: 20px;
+        a {
+          color: $text-black;
+        }
+      }
+      &__ctas {
+        padding: 10px 0px;
+        .button {
+          margin: 0px 5px;
+          color: $white;
+          &:first-child {
+            margin: 0px 5px 0px 0px;
+          }
+          @include media('notebook-large') {
+            font-size: 1rem;
+          }
+        }
+      }
+    }
+  }
+}

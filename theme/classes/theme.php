@@ -54,8 +54,18 @@ class TriviaAdminTheme
     }
   }
 
+  function cep_next_event_handler($request) {
+    $post = wp_get_recent_posts([
+      'numberofposts' => 1,
+      'post_type' => 'triviaevent',
+    ])[0];
+    $post['acf'] = get_fields($post['ID']);
+    return [$post];
+  }
+
   function custom_endpoints() {
     new CEP('menu', 'GET', [$this, 'cep_menu_handler'], 'menu_name', false);
+    new CEP('next_event', 'GET', [$this, 'cep_next_event_handler'], 'next_event', false);
   }
 
   function custom_post_types() {

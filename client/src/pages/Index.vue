@@ -53,63 +53,6 @@
           </div>
         </div>
       </section>
-      <section class="section section--red sponsors" id="sponsors">
-        <div class="container grid">
-          <div class="grid-1of1">
-            <h2>Our Community Partners</h2>
-            <p>We’re grateful to have support from these local film institutions:</p>
-          </div>
-          <div class="grid-1of4 grid-1of2--tablet-large">
-            <div class="sponsors__sponsor">
-              <a
-              href="https://iffboston.org"
-              rel="noopenner"
-              target="_blank">
-                <g-image src="~/assets/sponsors/IFFBostonLogo.png"/>
-              </a>
-            </div>
-          </div>
-          <div class="grid-1of4 grid-1of2--tablet-large">
-            <div class="sponsors__sponsor">
-              <a
-              href="https://coolidge.org"
-              rel="noopenner"
-              target="_blank">
-                <g-image src="~/assets/sponsors/CoolidgeLogo.png"/>
-              </a>
-            </div>
-          </div>
-          <div class="grid-1of4 grid-1of2--tablet-large">
-            <div class="sponsors__sponsor">
-              <a
-              href="http://web.emerson.edu/brightlights/"
-              rel="noopenner"
-              target="_blank">
-                <g-image src="~/assets/sponsors/BrightLightsWhite.png"/>
-              </a>
-            </div>
-          </div>
-          <div class="grid-1of4 grid-1of2--tablet-large">
-            <div class="sponsors__sponsor">
-              <a
-              href="https://www.brattlefilm.org/"
-              rel="noopenner"
-              target="_blank">
-                <g-image src="~/assets/sponsors/BrattleLogo.png"/>
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="section signup" id="sign-up">
-        <div class="container grid">
-          <div class="grid-1of1">
-            <h2>Keep Up To Date</h2>
-            <p>We usually send two emails per month: an announcement of that month's event and a reminder closer to it.</p>
-            <MailchimpSignUp/>
-          </div>
-        </div>
-      </section>
     </main>
   </Layout>
 </template>
@@ -119,8 +62,10 @@
 </style>
 
 <script>
-import MailchimpSignUp from "../components/MailChimp.vue";
 export default {
+  data() {
+    return {};
+  },
   metaInfo: {
     title: 'Home',
     meta: [
@@ -157,9 +102,6 @@ export default {
         content: "/assets/static/src/assets/home/homeHero.jpeg",
       }
     ],
-  },
-  components: {
-    MailchimpSignUp
   },
 }
 </script>

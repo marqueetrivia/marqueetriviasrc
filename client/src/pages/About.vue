@@ -1,13 +1,13 @@
 <template>
   <Layout>
-    
+    <main>
+      
+    </main>
   </Layout>
 </template>
 
 <script>
 export default {
-  metaInfo: {
-    title: 'About us'
-  }
+  name: 'AboutPage',
 }
 </script>
