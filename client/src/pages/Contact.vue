@@ -1,7 +1,7 @@
 <template>
   <Layout>
     <main class="contact">
-      <section class="section contact__content">
+      <section class="section section--yellow contact__content">
         <div class="container">
           <h1>Contact Us</h1>
           <p>For questions, concerns, or ideas please email <a href="mailto:info@marqueetrivia.com">info@marqueetrivia.com</a></p>
