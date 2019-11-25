@@ -1,15 +1,38 @@
 .trivia-event {
   &__header {
     &__title {
+      margin-top: 15%;
       padding: 0px 20px;
       position: relative;
-      top: 33.333%;
       color: $white;
       .location,
       .date {
         font-size: 2rem;
         line-height: 2.2rem;
         margin: 0px 0px 10px;
+      }
+      .location {
+        a {
+          color: $white;
+          transition: color .25s ease;
+          &:hover {
+            color: $button-blue;
+          }
+        }
+      }
+      @include media('notebook-large') {
+        margin-top: 10px;
+        text-align: center;
+      }
+    }
+    &__ctas {
+      padding: 0px 20px;
+      .button {
+        margin: 5px 10px 0px 0px;
+      }
+      @include media ('notebook-large') {
+        text-align: center;
+        margin: 5px 10px;
       }
     }
     &__image {

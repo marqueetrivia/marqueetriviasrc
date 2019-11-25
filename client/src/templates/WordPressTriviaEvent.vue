@@ -3,7 +3,7 @@
     <main class="trivia-event">
       <header class="trivia-event__header">
         <div class="grid">
-          <div class="grid-1of3 grid-1of1--tablet-large section section--red">
+          <div class="grid-1of3 grid-1of1--notebook-large section section--red">
             <div class="trivia-event__header__title">
               <h1>{{event.title}}</h1>
               <p
@@ -17,12 +17,22 @@
                 <a
                 :href='`https://maps.google.com/?q=${event.acf.location.address}`'
                 rel="no-openner"
-                target="_blank"
-                class="button">White Horse Tavern</a>
+                target="_blank">
+                  <font-awesome-icon :icon="['fas', 'map-marked-alt']"/>
+                  White Horse Tavern
+                </a>
               </p>
             </div>
+            <div class="trivia-event__header__ctas">
+              <a
+              href="https://calendar.google.com/event?action=TEMPLATE&tmeid=NjBwbThwajRjNWkzOGI5aGNrbzZjYjlrY3BoMzRiYjI2c3BtMmJiMWM0bzZhZDM2Nm9xM2dvajZjOCBtYXJxdWVldHJpdmlhLmNvbV92cTZwcmhpbmIzZWwwbWZjbG10MGp1ZjUyZ0Bn&tmsrc=marqueetrivia.com_vq6prhinb3el0mfclmt0juf52g%40group.calendar.google.com"
+              class="button"
+              target="_blank"
+              rel="noopenner">Add To Google Calendar</a>
+              <g-link to="~/assets/triviaevents/openingnight/OpeningNight.ics" class="button">Add To iCal</g-link>
+            </div>
           </div>
-          <div class="grid-2of3 grid-1of1--tablet-large">
+          <div class="grid-2of3 grid-1of1--notebook-large">
             <div class="trivia-event__header__image background-image">
               <g-image src="~/assets/triviaevents/openingnight/openingnight-hero.png"/>
             </div>
@@ -43,16 +53,16 @@
           <h2>The Rules</h2>
           <ul class="rules">
             <li class="rules__rule">
-              No phones during the round
+              No phones during the rounds (no cheating!)
             </li>
             <li class="rules__rule">
-              Max team size of 6 players
+              Teams are limited to groups of six (teams larger than that are not eligible to win prizes, but can still play!)
             </li>
             <li class="rules__rule">
               Answer sheets will be collected at the end of each round
             </li>
             <li class="rules__rule">
-              The answeres have been researched and are set ahead of time
+              The answers have been researched and are set ahead of time
             </li>
             <li class="rules__rule">
               Unless otherwise stated; voice work and cameos count for questions about actors
@@ -61,7 +71,7 @@
               Unless otherwise stated; box office stats are not adjusted for inflation and are domestic
             </li>
             <li class="rules__rule">
-              Unless otherwise stated; oscars round are regarding the release year of the film(s)
+              Unless otherwise stated; Oscars round are regarding the release year of the film(s)
             </li>
           </ul>
         </div>
@@ -102,9 +112,14 @@ export default {
   },
   computed: {
     eventDate() {
+      const months = [
+        "January", "February", "March", "April", "May", "June",
+        "July", "August", "September", "October", "November", "December"
+      ];
+      const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
       const eventDate = new Date(this.event.acf.dateTime);
       const eventTime = `${(eventDate.getHours() + 11) % 12 + 1}:${eventDate.getMinutes()}`;
-      return `${eventDate.getMonth()}/${eventDate.getDate()}/${eventDate.getFullYear()} @${eventTime}pm`;
+      return `${days[eventDate.getDay()]}, ${months[eventDate.getMonth()]} ${eventDate.getDate()} at ${eventTime}pm`;
     },
   },
   metaInfo: {
