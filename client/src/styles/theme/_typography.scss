@@ -14,7 +14,7 @@ h1, h2, h3, th {
 
 .logo {
   font-weight: 800;
-  color: $marquee-red;
+  color: $marquee-red !important;
   letter-spacing: 2px;
   text-shadow: 1px 1px $black;
 }
@@ -73,5 +73,9 @@ h3,
 a,
 .link {
   text-decoration: none;
-  color: $button-blue;
+  color: $white;
+  transition: color .25s ease;
+  &:not(.button):hover {
+    color: $button-blue;
+  }
 }
