@@ -25,6 +25,22 @@
                       <g-link
                       :to='`/triviaevent/${event.node.slug}`'>
                         <h3 class="event__title">{{event.node.title}}</h3>
+                        <p
+                        v-if="event.node.acf"
+                        class="date">
+                          {{eventDate(event)}}
+                        </p>
+                      </g-link>
+                      <a
+                      :href='`https://maps.google.com/?q=${event.node.acf.location.address}`'
+                      rel="no-openner"
+                      target="_blank"
+                      class="location">
+                        <font-awesome-icon :icon="['fas', 'map-marked-alt']"/>
+                        White Horse Tavern
+                      </a>
+                      <g-link
+                      :to='`/triviaevent/${event.node.slug}`'>
                         <div
                         class="event__description"
                         v-html="event.node.acf.description"/>
@@ -84,6 +100,18 @@ export default {
   },
   mounted() {
     this.events = this.$page.allWordPressTriviaevent.edges;
+  },
+  methods: {
+    eventDate(event) {
+      const months = [
+        "January", "February", "March", "April", "May", "June",
+        "July", "August", "September", "October", "November", "December"
+      ];
+      const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+      const eventDate = new Date(event.node.acf.dateTime);
+      const eventTime = `${(eventDate.getHours() + 11) % 12 + 1}:${eventDate.getMinutes()}`;
+      return `${days[eventDate.getDay()]}, ${months[eventDate.getMonth()]} ${eventDate.getDate()} at ${eventTime}pm`;
+    },
   },
   metaInfo: {
     title: 'Events',

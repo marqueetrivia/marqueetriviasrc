@@ -47,6 +47,13 @@
   }
 }
 
+a {
+  color: $white;
+  transition: color .25s ease;
+  &:not(.button):hover {
+    color: $button-blue;
+  }
+}
 
 .section {
   background-color: $white;

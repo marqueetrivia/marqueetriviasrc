@@ -11,15 +11,6 @@
         line-height: 2.2rem;
         margin: 0px 0px 10px;
       }
-      .location {
-        a {
-          color: $white;
-          transition: color .25s ease;
-          &:hover {
-            color: $button-blue;
-          }
-        }
-      }
       @include media('notebook-large') {
         margin-top: 10px;
         text-align: center;
