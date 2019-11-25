@@ -35,7 +35,7 @@ export default {
       },
       {
         property: "og:image",
-        content: "/assets/static/src/assets/home/homeHero.jpeg",
+        content: "https://www.marqueetrivia.com/openingnight-hero.png",
       },
       {
         property: "twitter:title",
@@ -51,7 +51,7 @@ export default {
       },
       {
         property: "twitter:image",
-        content: "/assets/static/src/assets/home/homeHero.jpeg",
+        content: "https://www.marqueetrivia.com/openingnight-hero.png",
       }
     ],
   },
