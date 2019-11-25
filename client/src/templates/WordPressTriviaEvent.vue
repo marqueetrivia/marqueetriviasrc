@@ -135,7 +135,7 @@ export default {
       },
       {
         property: "og:url",
-        content: "https://www.marqueetrivia.com/events",
+        content: "https://www.marqueetrivia.com/triviaevent/opening-night/",
       },
       {
         property: "og:image",
