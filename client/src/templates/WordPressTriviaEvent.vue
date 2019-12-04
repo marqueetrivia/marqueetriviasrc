@@ -117,7 +117,7 @@ export default {
         "July", "August", "September", "October", "November", "December"
       ];
       const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
-      const eventDate = new Date(this.event.acf.dateTime);
+      const eventDate = new Date(this.event.acf.dateTime.replace(/\-/g, '/'));
       const eventTime = `${(eventDate.getHours() + 11) % 12 + 1}:${eventDate.getMinutes()}`;
       return `${days[eventDate.getDay()]}, ${months[eventDate.getMonth()]} ${eventDate.getDate()} at ${eventTime}pm`;
     },
