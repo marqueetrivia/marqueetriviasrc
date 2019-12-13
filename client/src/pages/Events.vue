@@ -13,7 +13,7 @@
           v-else
           class="no-events">
             <span>No upcoming events announced... yet.</span>
-            Follow us @marqueetrivia and sign up for the newsletter to
+            Follow us @marqueetrivia and sign-up for the newsletter to
             find out when we post a new night.
           </p>
           <ul class="events__list">
