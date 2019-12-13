@@ -9,6 +9,16 @@
   h2 {
     margin-bottom: 10px;
   }
+  .no-events {
+    position: relative;
+    top: -15px;
+    margin-bottom: 10px;
+    span {
+      font-style: italic;
+      display: block;
+      margin-bottom: 5px;
+    }
+  }
   &__list {
     .event {
       h3 {

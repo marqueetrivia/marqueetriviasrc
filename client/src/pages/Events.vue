@@ -9,8 +9,10 @@
       <section class="section section--yellow">
         <div class="container">
           <h2 v-if="events.length">Upcoming Events</h2>
-          <p v-else>
-            No upcoming events announced... yet.
+          <p
+          v-else
+          class="no-events">
+            <span>No upcoming events announced... yet.</span>
             Follow us @marqueetrivia and sign up for the newsletter to
             find out when we post a new night.
           </p>
