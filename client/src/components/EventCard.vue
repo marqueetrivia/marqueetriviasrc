@@ -3,7 +3,10 @@
     <div class="event__inner grid">
       <div class="grid-1of3 grid-push-2of3 grid-1of1--tablet-large">
         <div class="event__image background-image">
-          <g-image src="~/assets/triviaevents/openingnight/openingnight-sq.png"/>
+          <g-link
+          :to='`/triviaevent/${event.node.slug}`'>
+            <g-image src="~/assets/triviaevents/openingnight/openingnight-sq.png"/>
+          </g-link>
         </div>
       </div>
       <div class="grid-2of3 grid-pull-1of3 grid-1of1--tablet-large">
