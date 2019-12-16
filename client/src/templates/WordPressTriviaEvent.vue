@@ -137,7 +137,7 @@ export default {
       meta: [
         {
           property: "og:title",
-          content: this.$page.wordPressTriviaevent.title,
+          content: `Marquee Trivia - ${this.$page.wordPressTriviaevent.title}`,
         },
         {
           property: "og:description",
@@ -149,7 +149,7 @@ export default {
         },
         {
           property: "og:image",
-          content: "https://www.marqueetrivia.com/openingnight-hero.png",
+          content: `https://www.marqueetrivia.com/triviaevents${this.$page.wordPressTriviaevent.acf.photoAsset}`,
         },
         {
           property: "twitter:title",
@@ -165,7 +165,7 @@ export default {
         },
         {
           property: "twitter:image",
-          content: "https://www.marqueetrivia.com/openingnight-hero.png",
+          content: `https://www.marqueetrivia.com/triviaevents${this.$page.wordPressTriviaevent.acf.photoAsset}`,
         }
       ],
     };
