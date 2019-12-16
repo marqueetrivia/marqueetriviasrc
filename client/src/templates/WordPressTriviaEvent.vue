@@ -23,7 +23,9 @@
                 </a>
               </p>
             </div>
-            <div class="trivia-event__header__ctas">
+            <div
+            v-if="event.acf"
+            class="trivia-event__header__ctas">
               <a
               :href="event.acf.googleCalendarLink"
               class="button"
