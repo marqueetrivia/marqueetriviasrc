@@ -2,12 +2,11 @@
   <div class="card">
     <div class="event__inner grid">
       <div class="grid-1of3 grid-push-2of3 grid-1of1--tablet-large">
-        <div class="event__image background-image">
-          <g-link
-          :to='`/triviaevent/${event.node.slug}`'>
-            <g-image src="~/assets/triviaevents/openingnight/openingnight-sq.png"/>
-          </g-link>
-        </div>
+        <g-link
+        :to='`/triviaevent/${event.node.slug}`'>
+          <div class="event__image background-image"
+          :style="{backgroundImage: `url(/triviaevents${event.node.acf.photoAsset})`}"/>
+        </g-link>
       </div>
       <div class="grid-2of3 grid-pull-1of3 grid-1of1--tablet-large">
         <div class="event__details">
@@ -43,7 +42,7 @@
             target="_blank"
             rel="noopenner">Add To Google Calendar</a>
             <g-link
-            :to="`~/assets/triviaevents/ical/${event.node.acf.icalAsset}`"
+            :to="`/triviaevents/ical/${event.node.acf.icalAsset}`"
             class="button">Add To iCal</g-link>
           </div>
         </div>

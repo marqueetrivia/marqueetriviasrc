@@ -32,13 +32,15 @@
               target="_blank"
               rel="noopenner">Add To Google Calendar</a>
               <g-link
-              :to="`~/assets/triviaevents/ical/${event.acf.icalAsset}`"
+              :to="`/triviaevents/ical/${event.acf.icalAsset}`"
               class="button">Add To iCal</g-link>
             </div>
           </div>
           <div class="grid-2of3 grid-1of1--notebook-large">
-            <div class="trivia-event__header__image background-image">
-              <g-image src="~/assets/triviaevents/openingnight/openingnight-hero.png"/>
+            <div
+            v-if="event.acf"
+            class="trivia-event__header__image background-image"
+            :style="{backgroundImage: `url(/triviaevents${event.acf.photoAsset})`}">
             </div>
           </div>
         </div>
@@ -96,6 +98,7 @@
         }
         googleCalendarLink
         icalAsset
+        photoAsset (width: 1000, height: 400)
       }
     }
   }
@@ -128,42 +131,44 @@ export default {
       return `${days[eventDate.getDay()]}, ${months[eventDate.getMonth()]} ${eventDate.getDate()} at ${eventTime}pm`;
     },
   },
-  metaInfo: {
-    title: 'Event',
-    meta: [
-      {
-        property: "og:title",
-        content: "Marquee Trivia Opening Night",
-      },
-      {
-        property: "og:description",
-        content: "Boston’s first trivia night for film lovers. Every month we dive into movie marginalia, Oscars history, box office stats, and more!",
-      },
-      {
-        property: "og:url",
-        content: "https://www.marqueetrivia.com/triviaevent/opening-night/",
-      },
-      {
-        property: "og:image",
-        content: "https://www.marqueetrivia.com/openingnight-hero.png",
-      },
-      {
-        property: "twitter:title",
-        content: "Marquee Trivia",
-      },
-      {
-        property: "twitter:description",
-        content: "Boston’s first trivia night for film lovers. Every month we dive into movie marginalia, Oscars history, box office stats, and more!",
-      },
-      {
-        property: "twitter:card",
-        content: "summary_large_image",
-      },
-      {
-        property: "twitter:image",
-        content: "https://www.marqueetrivia.com/openingnight-hero.png",
-      }
-    ],
-  },
+  metaInfo() {
+    return {
+      title: this.$page.wordPressTriviaevent.title,
+      meta: [
+        {
+          property: "og:title",
+          content: this.$page.wordPressTriviaevent.title,
+        },
+        {
+          property: "og:description",
+          content: "Boston’s first trivia night for film lovers. Every month we dive into movie marginalia, Oscars history, box office stats, and more!",
+        },
+        {
+          property: "og:url",
+          content: `https://www.marqueetrivia.com${this.$route.path}`,
+        },
+        {
+          property: "og:image",
+          content: "https://www.marqueetrivia.com/openingnight-hero.png",
+        },
+        {
+          property: "twitter:title",
+          content: "Marquee Trivia",
+        },
+        {
+          property: "twitter:description",
+          content: "Boston’s first trivia night for film lovers. Every month we dive into movie marginalia, Oscars history, box office stats, and more!",
+        },
+        {
+          property: "twitter:card",
+          content: "summary_large_image",
+        },
+        {
+          property: "twitter:image",
+          content: "https://www.marqueetrivia.com/openingnight-hero.png",
+        }
+      ],
+    };
+  }
 };
 </script>
