@@ -57,6 +57,8 @@
             location {
               address
             }
+            googleCalendarLink
+            icalAsset
           }
         }
       }

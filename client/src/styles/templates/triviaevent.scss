@@ -34,6 +34,13 @@
     h2 {
       margin-bottom: 10px;
     }
+    p {
+      margin-bottom: 5px;
+      line-height: 1.4;
+    }
+    a {
+      color: $button-blue;
+    }
   }
   &__rules {
     text-align: center;

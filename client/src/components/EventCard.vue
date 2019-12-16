@@ -38,11 +38,13 @@
           v-if="isPresent"
           class="event__ctas">
             <a
-            href="https://calendar.google.com/event?action=TEMPLATE&tmeid=NjBwbThwajRjNWkzOGI5aGNrbzZjYjlrY3BoMzRiYjI2c3BtMmJiMWM0bzZhZDM2Nm9xM2dvajZjOCBtYXJxdWVldHJpdmlhLmNvbV92cTZwcmhpbmIzZWwwbWZjbG10MGp1ZjUyZ0Bn&tmsrc=marqueetrivia.com_vq6prhinb3el0mfclmt0juf52g%40group.calendar.google.com"
+            :href="event.node.acf.googleCalendarLink"
             class="button"
             target="_blank"
             rel="noopenner">Add To Google Calendar</a>
-            <g-link to="~/assets/triviaevents/openingnight/OpeningNight.ics" class="button">Add To iCal</g-link>
+            <g-link
+            :to="`~/assets/triviaevents/ical/${event.node.acf.icalAsset}`"
+            class="button">Add To iCal</g-link>
           </div>
         </div>
       </div>

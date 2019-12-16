@@ -25,11 +25,13 @@
             </div>
             <div class="trivia-event__header__ctas">
               <a
-              href="https://calendar.google.com/event?action=TEMPLATE&tmeid=NjBwbThwajRjNWkzOGI5aGNrbzZjYjlrY3BoMzRiYjI2c3BtMmJiMWM0bzZhZDM2Nm9xM2dvajZjOCBtYXJxdWVldHJpdmlhLmNvbV92cTZwcmhpbmIzZWwwbWZjbG10MGp1ZjUyZ0Bn&tmsrc=marqueetrivia.com_vq6prhinb3el0mfclmt0juf52g%40group.calendar.google.com"
+              :href="event.acf.googleCalendarLink"
               class="button"
               target="_blank"
               rel="noopenner">Add To Google Calendar</a>
-              <g-link to="~/assets/triviaevents/openingnight/OpeningNight.ics" class="button">Add To iCal</g-link>
+              <g-link
+              :to="`~/assets/triviaevents/ical/${event.acf.icalAsset}`"
+              class="button">Add To iCal</g-link>
             </div>
           </div>
           <div class="grid-2of3 grid-1of1--notebook-large">
@@ -90,6 +92,8 @@
         location {
           address
         }
+        googleCalendarLink
+        icalAsset
       }
     }
   }
