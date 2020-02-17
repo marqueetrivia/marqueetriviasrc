@@ -5,10 +5,8 @@
       background-color: rgba($black, .5);
       .container {
         position: relative;
-        top: 225px;
-        @include media('tablet-large') {
-          top: 105px;
-        }
+        top: 50%;
+        transform: translateY(-50%);
       }
       &__content {
         position: relative;

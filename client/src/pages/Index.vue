@@ -6,7 +6,6 @@
           <div class="container">
             <div class="overlay__content">
               <h1>Boston's First Trivia Night For Film Lovers</h1>
-              <p>took us long enough...</p>
             </div>
           </div>
         </div>
