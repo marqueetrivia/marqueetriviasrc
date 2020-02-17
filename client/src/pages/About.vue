@@ -87,5 +87,42 @@
 <script>
 export default {
   name: 'AboutPage',
+  metaInfo: {
+    title: 'About',
+    meta: [
+      {
+        property: "og:title",
+        content: "About Marquee Trivia",
+      },
+      {
+        property: "og:description",
+        content: "Boston’s first trivia night for film lovers. Every month we dive into movie marginalia, Oscars history, box office stats, and more!",
+      },
+      {
+        property: "og:url",
+        content: "https://www.marqueetrivia.com/about",
+      },
+      {
+        property: "og:image",
+        content: "https://www.marqueetrivia.com/openingnight-hero.png",
+      },
+      {
+        property: "twitter:title",
+        content: "Marquee Trivia",
+      },
+      {
+        property: "twitter:description",
+        content: "Boston’s first trivia night for film lovers. Every month we dive into movie marginalia, Oscars history, box office stats, and more!",
+      },
+      {
+        property: "twitter:card",
+        content: "summary_large_image",
+      },
+      {
+        property: "twitter:image",
+        content: "https://www.marqueetrivia.com/openingnight-hero.png",
+      }
+    ],
+  },
 }
 </script>
