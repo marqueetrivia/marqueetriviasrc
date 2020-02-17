@@ -8,6 +8,9 @@
         <nav class="nav grid-1of1">
           <ul class="menu">
             <li class="menu__item">
+              <a href="/about" class="menu__link">About</a>
+            </li>
+            <li class="menu__item">
               <a href="/events" class="menu__link">Events</a>
             </li>
             <li class="menu__item">

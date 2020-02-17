@@ -9,16 +9,13 @@
         @include media('tablet-large') {
           top: 105px;
         }
-        @include media('tablet-small') {
-          top: 35px;
-        }
       }
       &__content {
         position: relative;
         top: 33.333%;
         width: 33.333%;
         left: 66.666%;
-        @include media('tablet-large') {
+        @include media('notebook-large') {
           width: 100%;
           left: 0;
         }

@@ -10,7 +10,7 @@
             </div>
           </div>
         </div>
-        <g-image src="~/assets/home/homeHero.jpeg"
+        <g-image src="~/assets/home/Hero2020.jpg"
         class="hero__img"/>
       </header>
       <!-- <section class="section section--red next-event" id="coming-soon">

@@ -1,0 +1,55 @@
+.about-page {
+  .page-hero {
+    overflow: hidden;
+    &__title {
+      height: 100%;
+      box-sizing: border-box;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  h2 {
+    margin-bottom: 10px;
+  }
+  p {
+    line-height: 1.4;
+    margin-bottom: 5px;
+  }
+  .bios {
+    overflow: hidden;
+    h2 {
+      text-align: center;
+    }
+    &__bio {
+      margin-bottom: 25px;
+      a {
+        color: $button-blue;
+      }
+      @include media('tablet-large') {
+        text-align: center;
+      }
+    }
+    &__img-ctr {
+      max-height: 150px;
+      text-align: center;
+      @include media('tablet-large') {
+        margin-bottom: 15px;
+      }
+    }
+    .bio {
+      display: flex;
+      align-items: center;
+      height: 100%;
+      h3 {
+        width: 100%;
+        margin-bottom: 5px;
+      }
+    }
+    img {
+      max-width: 100%;
+      max-height: 150px;
+      display: inline-block;
+    }
+  }
+}
