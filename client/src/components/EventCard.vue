@@ -43,9 +43,7 @@
             rel="noopenner">Add To Google Calendar</a>
             <g-link
             :to="`/triviaevents/ical/${event.node.acf.icalAsset}`"
-            class="button"
-            target="_blank"
-            rel="noopenner">Add To iCal</g-link>
+            class="button">Add To iCal</g-link>
           </div>
         </div>
       </div>
