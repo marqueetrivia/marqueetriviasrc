@@ -31,11 +31,6 @@
               class="button"
               target="_blank"
               rel="noopenner">Add To Google Calendar</a>
-              <g-link
-              :to="`/triviaevents/ical/${event.acf.icalAsset}`"
-              class="button"
-              target="_blank"
-              rel="noopenner">Add To iCal</g-link>
             </div>
           </div>
           <div class="grid-2of3 grid-1of1--notebook-large">
@@ -99,7 +94,6 @@
           address
         }
         googleCalendarLink
-        icalAsset
         photoAsset (width: 1000, height: 400)
       }
     }

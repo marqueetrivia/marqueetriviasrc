@@ -58,7 +58,6 @@
               address
             }
             googleCalendarLink
-            icalAsset
             photoAsset (width: 500, height: 400)
           }
         }
