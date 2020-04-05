@@ -1,7 +1,6 @@
-version: '3.1'
+version: "3.1"
 
 services:
-
   wordpress:
     image: wordpress:latest
     restart: always
@@ -15,7 +14,7 @@ services:
       WORDPRESS_DB_PASSWORD: trivia
       WORDPRESS_DB_NAME: trivialocal
   db:
-    image: mysql:latest
+    image: mysql:5.7
     restart: always
     volumes:
       - "./.data/db:/var/lib/mysql"
@@ -23,7 +22,7 @@ services:
       MYSQL_DATABASE: trivialocal
       MYSQL_USER: triviauser
       MYSQL_PASSWORD: trivia
-      MYSQL_RANDOM_ROOT_PASSWORD: '1'
+      MYSQL_RANDOM_ROOT_PASSWORD: "1"
   phpmyadmin:
     image: phpmyadmin/phpmyadmin
     depends_on:
