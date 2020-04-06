@@ -45,7 +45,7 @@
         }
       }
       &__image {
-        @include media('tablet-large') {
+        @include media("tablet-large") {
           height: 300px;
         }
       }
@@ -66,9 +66,14 @@
           &:first-child {
             margin: 0px 5px 0px 0px;
           }
-          @include media('notebook-large') {
+          @include media("notebook-large") {
             font-size: 1rem;
           }
+        }
+      }
+      .april-2020 {
+        .event__image {
+          background-size: contain;
         }
       }
     }
