@@ -23,7 +23,7 @@
     "gh-pages": "^2.1.1",
     "gridsome-helper-json": "^1.0.3",
     "lodash": "^4.17.20",
-    "node-sass": "^4.14.1",
+    "node-sass": "^7.0.0",
     "sass-loader": "^8.0.0",
     "style-resources-loader": "^1.4.1"
   }
